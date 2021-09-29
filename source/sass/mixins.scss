@@ -1,0 +1,67 @@
+@mixin retina {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @content;
+  }
+}
+
+@mixin viewport--md {
+  @media (max-width: $viewport--xl) {
+    @content;
+  }
+}
+
+@mixin viewport--sm {
+  @media (max-width: $viewport--md) {
+    @content;
+  }
+}
+
+@mixin button-reset {
+  padding: 0;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin link-reset {
+  text-decoration: none;
+  color: inherit;
+}
+
+@mixin title-reset {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin paragraph-reset {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin expand-interactive-area($width, $height) {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: $width;
+    height: $height;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@mixin non-touch {
+  @media (hover: hover) {
+    @content;
+  }
+}

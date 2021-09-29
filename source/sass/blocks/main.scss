@@ -1,0 +1,6 @@
+.main {
+  @include viewport--sm {
+    display: flex;
+    flex-direction: column;
+  }
+}

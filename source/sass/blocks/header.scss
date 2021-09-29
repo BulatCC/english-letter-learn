@@ -1,0 +1,35 @@
+.header {
+  padding-top: 20px;
+
+  @include viewport--sm {
+    padding-top: 10px;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+  }
+
+  .title {
+    margin-left: 230px;
+
+    @include viewport--md {
+      margin-left: 20vw;
+    }
+
+    @include viewport--sm {
+      margin-left: auto;
+      padding-left: 15px;
+    }
+  }
+
+  .logo {
+    width: 128px;
+    height: 128px;
+
+    @include viewport--sm {
+      width: 100px;
+      height: 100px;
+    }
+  }
+}

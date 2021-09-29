@@ -1,0 +1,26 @@
+// Colors
+//---------------------------------
+// https://www.htmlcsscolor.com/hex/334482
+
+// Default
+
+$color-default-black:             #000000;
+$color-default-white:             #ffffff;
+$color-transparent:               rgba(255, 255, 255, 0);
+
+// Typography
+//---------------------------------
+
+$font-family--:                     "PTSans", "Arial", sans-serif;
+
+// Animation
+//---------------------------------
+
+$default-transition-settings:       0.2s ease;
+
+// Viewports
+//---------------------------------
+
+$viewport--md:                      768px;
+$viewport--xl:                      1224px;
+

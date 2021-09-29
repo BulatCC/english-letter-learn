@@ -1,0 +1,19 @@
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  @include viewport--sm {
+    flex-direction: column;
+    margin-top: auto;
+    padding-top: 0;
+    padding-bottom: 25px;
+
+    button {
+      &:first-child {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

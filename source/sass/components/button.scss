@@ -1,0 +1,47 @@
+.button {
+  @include button-reset;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-size: 30px;
+  line-height: 100%;
+  background-color: rgb(255,151,0);
+  transition: opacity $default-transition-settings;
+
+  @include viewport--md {
+    font-size: 22px;
+  }
+
+  @include viewport--sm {
+    font-size: 20px;
+  }
+
+  &--disabled {
+    pointer-events: none;
+  }
+
+  &:hover {
+    opacity: 0.8;
+    transition: opacity $default-transition-settings;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  svg {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    fill: $color-default-white;
+
+    @include viewport--sm {
+      width: 25px;
+      height: 25px;
+    }
+  }
+}

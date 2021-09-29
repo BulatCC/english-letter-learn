@@ -1,0 +1,8 @@
+<button type=@@context.type class="button @@if (context.mod) {@@context.mod}">
+  @@if (context.svg) {
+    <svg width="24" height="24">
+      <use xlink:href="#@@context.svg"></use>
+    </svg>
+  }
+  <span>@@context.name</span>
+</button>

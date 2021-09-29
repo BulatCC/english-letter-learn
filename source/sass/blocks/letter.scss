@@ -1,0 +1,25 @@
+.letter {
+  display: block;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  min-height: 540px;
+  font-size: 400px;
+  line-height: 100%;
+  text-align: center;
+
+  @include viewport--md {
+    min-height: 405px;
+    font-size: 300px;
+  }
+
+  @include viewport--sm {
+    min-height: 280px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 200px;
+  }
+
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}

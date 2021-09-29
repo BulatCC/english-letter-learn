@@ -1,0 +1,13 @@
+.footer {
+  padding: 40px 0;
+  p {
+    @include paragraph-reset;
+
+    font-size: 20px;
+    text-align: center;
+  }
+
+  @include viewport--sm {
+    display: none;
+  }
+}

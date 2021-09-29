@@ -1,0 +1,30 @@
+.title {
+  @include title-reset;
+
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 32px;
+
+  @include viewport--md {
+    font-size: 30px;
+  }
+
+  @include viewport--sm {
+    font-size: 25px;
+  }
+
+  &--md {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  &--sm-plus {
+    font-size: 20px;
+    line-height: 21px;
+  }
+
+  &--sm {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}

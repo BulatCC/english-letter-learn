@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+  @@include("source/html/base/head.html")
+  <title>Учим английские буквы</title>
+
+</head>
+<body>
+
+  <div style="display: none;">
+    @@include("build/img/sprite_auto.svg")
+  </div>
+
+  <div class="wrapper">
+    @@include("source/html/base/header.html", {
+      "main": true
+    })
+
+    <main class="main">
+      <span class="letter"></span>
+      <section class="buttons">
+        <button class="button js-check">Проверить правильность
+          <svg width="24" height="24">
+            <use xlink:href="#speaker"></use>
+          </svg>
+        </button>
+        <a href="#" class="button js-next-letter">
+          Следующая буква
+          <svg width="24" height="24">
+            <use xlink:href="#next"></use>
+          </svg>
+        </a>
+      </section>
+    </main>
+
+    @@include("source/html/base/footer.html")
+
+  </div>
+  <script src="js/main.min.js"></script>
+</body>
+</html>
