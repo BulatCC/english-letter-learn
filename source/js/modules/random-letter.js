@@ -12,7 +12,6 @@ export const randomLetter = () => {
     window.letter = lettersCopy[randomElement];
     lettersCopy.splice(randomElement, 1);
     letterField.textContent = window.letter + window.letter;
-    letterField.textContent = window.letter + window.letter;
   };
 
   getRandomLetter();
